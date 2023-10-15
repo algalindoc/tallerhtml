@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8"/>
+  <title>Feliz cumpleaños a mi</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+ </head>
+ <body>
+    <header>
+        <div class="header-container">
+            <h1 class="titulo-proyecto">Personal Webpage</h1>
+            <nav>
+                <ul>
+                    <button class="btn btn-light" id="botonheader" onclick="irAn('cuadro1')">Inicio</button>
+                    <button class="btn btn-light" id="botonheader" onclick="irAn('cuadro2')">Formulario</button>
+                    <button class="btn btn-light" id="botonheader" onclick="irAn('cuadro3')">Galeria</button>
+                </ul>
+                <script>
+                    function irAn(link){
+                        document
+                            .getElementById(link)
+                            .scrollIntoView({behavior: "smooth"});
+                    }
+                </script>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="cuadro1">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col"><img src="dalmata4.png" height="600"></div>
+                <div class="col d-flex align-items-center">
+                  <div class="text-center">
+                    <h1 class="titulo">Feliz cumpleaños!!!!</h1>
+                    <p>
+                      Estas son las mañanitas
+                      que cantaba el rey David
+                      hoy por ser día de tu santo
+                      te las cantamos aquí
+                      despierta, mi bien, despierta
+                      mira que ya amaneció
+                      ya los pajaritos cantan
+                      la luna ya se metió
+                    </p>
+                  </div>
+                </div>
+                <div class="col"><img src="dalmata4 - Copy.png" height="600"></div>
+              </div>
+            </div>
+          </section>
+          <section id="cuadro2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 text-center">
+                        <div class="d-flex justify-content-end">
+                            <img src="oso.png" height="500">
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                        <div class="text-center">
+                            <h1 id="customtextfield2">Deja tu mensaje de cumpleaños!!!!</h1>
+                        <form action="" method="" class="fo">
+                            <div class="form-group">
+                                <label for="nombre" id ="customtextfield">Nombre:</label>
+                                <input type="text" class="form-control custom-input" id="custom-textarea" name="nombre" required>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label for="mensaje" id="customtextfield">Mensaje de cumpleaños:</label>
+                                <textarea class="form-control custom-textarea" id="custom-textarea" name="mensaje" rows="4" style="resize: vertical;" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn custom-button btn-lg btn-block" onclick="boton()" id="custom-button">
+                                    Enviar
+                                </button>
+                            </div>
+                            <script>
+                                function boton() {
+                                    alert("Gracias por tu mensaje de cumpleaños!!!");
+                                }
+                            </script>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cuadro3">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col">
+                        <img src="cerditos.gif" height="250">
+                    </div>
+                    <div class="col">
+                        <img src="pastel.png" height="250">
+                    </div>
+                    <div class="col">
+                        <img src="dalmata5.png" height="200">
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        <h2>Cerditos celebrando</h2>
+                    </div>
+                    <div class="col">
+                        <h2>Pastel de cumpleaños</h2>
+                    </div>
+                    <div class="col">
+                        <h2>Fiesta de perros</h2>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col">
+                        <p2>
+                        </p2>
+                    </div>
+                    <div class="col">
+                        <p2>Canta el  <a href="https://www.youtube.com/watch?v=FE_KnGLsX5c">Cumpleaños feliz</a></p2>
+                    </div>
+                    <div class="col">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>        
+    </main>
+ </body>
+</html>

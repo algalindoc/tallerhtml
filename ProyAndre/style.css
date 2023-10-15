@@ -1,0 +1,112 @@
+@font-face {
+    font-family: myFont;
+    src: url(fontcool.otf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(font2.otf);
+}
+
+header {
+    background-color: aliceblue    ; 
+    padding: 20px; 
+}
+
+.titulo-proyecto {
+    font: 20px myFont2;
+    font-size: 36px; 
+    color: #dda9bb; 
+    font-weight: bold; 
+   
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#botonheader{
+    background-color:aliceblue;
+    color: #dda9bb;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#cuadro1 {
+    background-color: aliceblue;
+  }
+
+.titulo {
+    font: 65px myFont;
+    color: #dda9bb;
+    text-align: center;
+    
+  }
+  
+p {
+    font: 20px myFont2;
+    border: 2px solid aliceblue;
+    padding: 50px;
+  }
+
+
+#cuadro2{
+    background-color: rgb(19, 32, 44);
+}
+
+#customtextfield2{
+    padding: 10px;
+    font: 25px myFont2;
+    color: #dda9bb;
+}
+
+#customtextfield{
+    padding: 10px;
+    font: 20px myFont2;
+    color: aliceblue;
+}
+
+#custom-textarea {
+    padding: 10px;
+    background-color: aliceblue;
+    border-color: rgb(30, 41, 52);
+    resize: vertical;
+}
+
+#custom-button {
+    display: inline-block;
+    background-color: #d6004b   ;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #ff4989, 0 0 25px #ff4989;
+}
+    
+#cuadro3{
+    background-image: url("fondo.png");
+    background-repeat: repeat-x; 
+    background-size: 5%;
+    background-position: bottom;
+    background-color: aliceblue ;
+}
+
+@keyframes slideTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#custom-button:hover {
+    box-shadow: 0 0 10px #ff4989, 0 0 50px #ff4989; 
+}
