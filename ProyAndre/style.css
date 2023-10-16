@@ -84,18 +84,11 @@ p {
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
-    animation: slideTop 1s ease forwards;
     animation-delay: 2s;
     box-shadow: 0 0 5px #ff4989, 0 0 25px #ff4989;
 }
     
-#cuadro3{
-    background-image: url("fondo.png");
-    background-repeat: repeat-x; 
-    background-size: 5%;
-    background-position: bottom;
-    background-color: aliceblue ;
-}
+
 
 @keyframes slideTop {
     from {
@@ -111,3 +104,15 @@ p {
 #custom-button:hover {
     box-shadow: 0 0 10px #ff4989, 0 0 50px #ff4989; 
 }
+
+.center-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+#cuadro3{
+    background-color:rgb(19, 32, 44);
+}
+

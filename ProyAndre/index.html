@@ -5,6 +5,11 @@
   <title>Feliz cumpleaños a mi</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  
+
  </head>
  <body>
     <header>
@@ -34,16 +39,8 @@
                 <div class="col d-flex align-items-center">
                   <div class="text-center">
                     <h1 class="titulo">Feliz cumpleaños!!!!</h1>
-                    <p>
-                      Estas son las mañanitas
-                      que cantaba el rey David
-                      hoy por ser día de tu santo
-                      te las cantamos aquí
-                      despierta, mi bien, despierta
-                      mira que ya amaneció
-                      ya los pajaritos cantan
-                      la luna ya se metió
-                    </p>
+                    <a href="galeria.html" class="btn btn-primary mt-5"  id="custom-button">Ir a la galería</a>
+
                   </div>
                 </div>
                 <div class="col"><img src="dalmata4 - Copy.png" height="600"></div>
@@ -60,7 +57,7 @@
                     </div>
                     <div class="col-6 d-flex align-items-center">
                         <div class="text-center">
-                            <h1 id="customtextfield2">Deja tu mensaje de cumpleaños!!!!</h1>
+                            <h1 id="customtextfield2">Deja tu mensaje o suscribete</h1>
                         <form action="" method="" class="fo">
                             <div class="form-group">
                                 <label for="nombre" id ="customtextfield">Nombre:</label>
@@ -69,6 +66,10 @@
                             <div class="form-group mb-4">
                                 <label for="mensaje" id="customtextfield">Mensaje de cumpleaños:</label>
                                 <textarea class="form-control custom-textarea" id="custom-textarea" name="mensaje" rows="4" style="resize: vertical;" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="nombre" id ="customtextfield">Correo:</label>
+                                <input type="text" class="form-control custom-input" id="custom-textarea" name="nombre" required>
                             </div>
                             <div class="text-center">
                                 <button class="btn custom-button btn-lg btn-block" onclick="boton()" id="custom-button">
@@ -84,47 +85,7 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="cuadro3">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col">
-                        <img src="cerditos.gif" height="250">
-                    </div>
-                    <div class="col">
-                        <img src="pastel.png" height="250">
-                    </div>
-                    <div class="col">
-                        <img src="dalmata5.png" height="200">
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        <h2>Cerditos celebrando</h2>
-                    </div>
-                    <div class="col">
-                        <h2>Pastel de cumpleaños</h2>
-                    </div>
-                    <div class="col">
-                        <h2>Fiesta de perros</h2>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col">
-                        <p2>
-                            <li>Cerdito 1</li>
-                            <li>Cerdito 2 </li>
-                        </p2>
-                    </div>
-                    <div class="col">
-                        <p2>Canta el  <a href="https://www.youtube.com/watch?v=FE_KnGLsX5c">Cumpleaños feliz</a></p2>
-                    </div>
-                    <div class="col">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </section>        
+        </section>      
     </main>
  </body>
 </html>
